@@ -12,8 +12,8 @@
 <body>
         <div class="card mx-auto mt-5" style="width: 18rem;">
             <div class="card-body">
-                <h3 class="card-title">SUCCESS</h3>
-                <h5 class="card-text">Check 👀 your 📱 for the secret message....</h5>
+                <h3 class="card-title text-center">SUCCESS</h3>
+                <p class="card-text p-3">Check 👀 your 📱 for the secret message....</p>
                 <a href="/logtp" class="btn btn-success w-100">Done</a>
             </div>
         </div>
@@ -39,13 +39,13 @@ $phone_number = $_POST['phoneNumber'];
 // A Twilio number you own with SMS capabilities
 $twilio_number = "+12562803412";
 
-// $client = new Client($account_sid, $auth_token);
-// $client->messages->create(
-//     // Where to send a text message (your cell phone?)
-//     '+91'.$phone_number,
-//     array(
-//         'from' => $twilio_number,
-//         'body' => 'Hola Amigo 👀! This is Harsh. Stay 🏠 Stay Safe 🙌',
-//     )
-// );
+$client = new Client($account_sid, $auth_token);
+$client->messages->create(
+    // Where to send a text message (your cell phone?)
+    '+91'.$phone_number,
+    array(
+        'from' => $twilio_number,
+        'body' => 'Hola Amigo 👀! This is Harsh. Stay 🏠 Stay Safe 🙌',
+    )
+);
 ?>
