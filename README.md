@@ -5,4 +5,4 @@ First install composer if you don't have then add the following command <br>
 ~
  composer init --require=twilio/sdk
  ~
-or (Click Here for full installation link)[https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-php-development-environment]
+or [Click Here for full installation link](https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-php-development-environment)
