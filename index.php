@@ -12,9 +12,9 @@
 <body>
     <div class="container">
         <div class="mx-auto mt-5 border p-5 bg-dark rounded" style="width: 350px">
-            <form action="Hello" method="post">
+            <form action="verify" method="post">
                 <input type="text" name="phoneNumber" id="phoneNumber" class="form-control mt-3" placeholder="Phone Number">
-                <input type="submit" value="Verify" class="btn btn-primary mt-3 d-block w-100">
+                <input type="submit" value="Send OTP" class="btn btn-primary mt-3 d-block w-100">
             </form>
         </div>
     </div>
